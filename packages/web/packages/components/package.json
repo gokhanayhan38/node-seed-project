@@ -1,0 +1,23 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "peerDependencies": {
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "browserify": "^13.0.0",
+    "babelify": "^7.3.0",
+    "babel-preset-react": "^6.3.13"
+  },
+  "dependencies": {
+    "action-defs": "file:../action-defs",
+    "classnames": "2.2.3",
+    "autoincrement": "1.0.0",
+    "format-number": "2.0.1",
+    "underscore": "1.8.3"
+  },
+  "browserify": {
+    "transform": [["babelify", {"presets": ["react"]}]]
+  }
+}

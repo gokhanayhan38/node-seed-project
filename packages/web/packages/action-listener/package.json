@@ -1,0 +1,13 @@
+{
+  "name": "action-listener",
+  "version": "1.0.0",
+  "private": true,
+  "peerDependencies": {
+    "react-dom": "15.0.2",
+    "react": "15.0.2"
+  },
+  "dependencies": {
+    "action-names": "file:../action-names",
+    "store": "file:../stores"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "stores",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "seamless-immutable": "6.1.1",
+    "prop-types": "0.2.0",
+    "@yavuzmester/geo-utils": "1.0.6",
+    "underscore": "1.8.3"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "web-main",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "15.0.2",
+    "react-dom": "15.0.2",
+    "web": "file:../web",
+    "initial-app-state": "file:packages/initial-app-state",
+    "@yavuzmester/fetch-helpers": "1.0.6",
+    "underscore": "1.8.3",
+    "less": "2.7.1",
+    "browserify": "^13.0.0",
+    "babelify": "^7.3.0",
+    "babel-preset-react": "^6.3.13"
+  },
+  "devDependencies": {
+    "http-server": "0.9.0"
+  },
+  "scripts": {
+    "browserify": "browserify main.js --extension=.jsx -t [babelify] -o dir-to-http-serve/bundle.js",
+    "rebuild": "chmod +x rebuild.sh && ./rebuild.sh",
+    "start": "http-server dir-to-http-serve -p 9001"
+  }
+}

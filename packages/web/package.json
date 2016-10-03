@@ -1,0 +1,25 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "peerDependencies": {
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "browserify": "^13.0.0",
+    "babelify": "^7.3.0",
+    "babel-preset-react": "^6.3.13"
+  },
+  "dependencies": {
+    "action-defs": "file:packages/action-defs",
+    "action-dispatcher": "file:packages/action-dispatcher",
+    "action-listener": "file:packages/action-listener",
+    "action-names": "file:packages/action-names",
+    "stores": "file:packages/stores",
+    "component-props-factory": "file:packages/component-props-factory",
+    "components": "file:packages/components",
+    "underscore": "1.8.3"
+  },
+  "browserify": {
+    "transform": [["babelify", {"presets": ["react"]}]]
+  }
+}
