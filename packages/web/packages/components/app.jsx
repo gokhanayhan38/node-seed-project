@@ -5,6 +5,7 @@ const React = require("react"),
 const Header = require("./header");
 const Sidebar = require("./sidebar");
 const Content = require("./content");
+const DataGrid = require("./data-grid");
 
 //const propTypes = {
 //
@@ -28,6 +29,8 @@ class App extends Component {
                     </nav>
 
                     <Content title={"Dashboard"}/>
+
+                    <DataGrid/>
                 </div>
             </div>
         );

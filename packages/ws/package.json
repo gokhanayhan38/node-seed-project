@@ -2,24 +2,20 @@
   "name": "ws",
   "version": "1.0.0",
   "private": true,
+  "files": ["server.js"],
   "dependencies": {
-    "dv-ws-constants": "file:packages/ws-constants",
+    "web": "file:packages/web",
     "express": "4.14.0",
     "body-parser": "1.15.2",
     "cors": "2.7.1",
     "express-content-type-override": "1.0.3",
     "http-server": "0.9.0",
-    "underscore": "1.8.3",
-    "get-json": "file:packages/get-json"
-  },
-  "devDependencies": {
-    "@yavuzmester/fetch-helpers": "1.0.3"
+    "underscore": "1.8.3"
   },
   "globalDependencies": {
     "mocha": "~3.0.1"
   },
   "scripts": {
-    "http-serve-data": "rm -rf dir-to-http-serve && mkdir dir-to-http-serve && cp -r ../../data dir-to-http-serve && http-server dir-to-http-serve -p 2999",
     "start": "node server.js",
     "test": "mocha"
   }

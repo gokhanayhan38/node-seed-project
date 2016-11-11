@@ -2,6 +2,7 @@
   "name": "node-seed-project",
   "version": "1.0.0",
   "private": true,
-  "devDependencies": {
+  "globalDependencies": {
+    "flow-bin": "^.33.0"
   }
 }
