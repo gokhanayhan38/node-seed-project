@@ -3,23 +3,33 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "react": "15.0.2",
-    "react-dom": "15.0.2",
     "web": "file:../web",
-    "initial-app-state": "file:packages/initial-app-state",
-    "@yavuzmester/fetch-helpers": "1.0.6",
-    "underscore": "1.8.3",
-    "less": "2.7.1",
-    "browserify": "^13.0.0",
-    "babelify": "^7.3.0",
-    "babel-preset-react": "^6.3.13"
+    "web-components": "file:../web-components",
+    "flux": "^2.1.1",
+    "jquery": "^2.2.4",
+    "less": "^2.7.1",
+    "node-fetch": "1.6.0",
+    "react": "^15.0.2",
+    "react-context-wrapper": "0.0.5",
+    "react-dom": "^15.0.2",
+    "@yavuzmester/cacheholder": "1.0.5",
+    "@yavuzmester/url-utils": "1.0.0"
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "less": "global:less",
+    "react": "global:React",
+    "react-dom": "global:ReactDOM"
+  },
+  "browserify": {
+    "transform": ["browserify-shim"]
   },
   "devDependencies": {
-    "http-server": "0.9.0"
+    "browserify": "^13.0.0",
+    "browserify-shim": "^3.8.12"
   },
   "scripts": {
-    "browserify": "browserify main.js --extension=.jsx -t [babelify] -o dir-to-http-serve/bundle.js",
-    "rebuild": "chmod +x rebuild.sh && ./rebuild.sh",
-    "start": "http-server dir-to-http-serve -p 9001"
+    "browserify": "browserify src/main.js --extension=.jsx -o dir-to-http-serve/bundle.js",
+    "rebuild": "chmod +x rebuild.sh && ./rebuild.sh"
   }
 }

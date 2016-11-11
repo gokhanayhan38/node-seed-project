@@ -12,9 +12,12 @@ cp -r css dir-to-http-serve &&
 cp -r js dir-to-http-serve &&
 cp -r images dir-to-http-serve &&
 cp -r lib dir-to-http-serve &&
-mkdir dir-to-http-serve/lib/less && cp -r node_modules/less/dist/less.js dir-to-http-serve/lib/less/ &&
 
 #browserify
 npm run browserify &&
+
+#copy to dv-http-serve
+rm -rf ../dv-httpserve/dir-to-http-serve-dv-web && mkdir ../dv-httpserve/dir-to-http-serve-dv-web &&
+cp -r dir-to-http-serve/. ../dv-http-serve/dir-to-http-serve/dv-web &&
 
 true;
