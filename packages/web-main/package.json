@@ -15,21 +15,20 @@
     "@yavuzmester/cacheholder": "1.0.5",
     "@yavuzmester/url-utils": "1.0.0"
   },
-  "browserify-shim": {
-    "jquery": "global:$",
-    "less": "global:less",
-    "react": "global:React",
-    "react-dom": "global:ReactDOM"
-  },
   "browserify": {
     "transform": ["browserify-shim"]
   },
   "devDependencies": {
-    "browserify": "^13.0.0",
-    "browserify-shim": "^3.8.12"
+    "exports-loader": "0.6.3",
+    "json-loader": "0.5.4",
+    "imports-loader": "0.6.5",
+    "transform-loader": "0.2.3",
+    "webpack": "1.13.3",
+    "webpack-dev-server": "1.16.2"
   },
   "scripts": {
-    "browserify": "browserify src/main.js --extension=.jsx -o dir-to-http-serve/bundle.js",
-    "rebuild": "chmod +x rebuild.sh && ./rebuild.sh"
+    "webpack": "webpack",
+    "rebuild": "chmod +x rebuild.sh && ./rebuild.sh",
+    "start": "webpack-dev-server --content-base dir-to-http-serve/"
   }
 }

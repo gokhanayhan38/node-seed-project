@@ -7,12 +7,14 @@ const renderApp = require("./render-app");
 const exportView = require("./export-view");
 const {actionDefs, ActionNames, AppState} = require("web"),
     {applyAction, getAppPropsMemo} = require("web").webUtils;
-//const $ = require("jquery");
+const $ = require("jquery");
 
 const {Dispatcher} = require("flux");
 const CacheHolder = require("@yavuzmester/cacheholder");
 const {parseQueryString} = require("@yavuzmester/url-utils");
-const fetch = require("node-fetch");
+
+const fetch = typeof window !== "undefined" ? window.fetch : require("node-fetch");
+const Promise = typeof window !== "undefined" ? window.Promise : require("promise");
 
 class WebMain {
     constructor() {
