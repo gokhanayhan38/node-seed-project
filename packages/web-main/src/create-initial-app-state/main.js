@@ -7,7 +7,7 @@ const renderApp = require("./render-app");
 const exportView = require("./export-view");
 const {actionDefs, ActionNames, AppState} = require("web"),
     {applyAction, getAppPropsMemo} = require("web").webUtils;
-const $ = require("jquery");
+//const $ = require("jquery");
 
 const {Dispatcher} = require("flux");
 const CacheHolder = require("@yavuzmester/cacheholder");
