@@ -17,8 +17,8 @@ cp -r lib dir-to-http-serve &&
 npm run webpack &&
 
 #copy to dv-http-serve
-rm -rf ../dv-httpserve/dir-to-http-serve-dv-web && mkdir ../dv-httpserve/dir-to-http-serve-dv-web &&
-cp -r dir-to-http-serve/. ../dv-http-serve/dir-to-http-serve/dv-web &&
+#rm -rf ../dv-httpserve/dir-to-http-serve-dv-web && mkdir ../dv-httpserve/dir-to-http-serve-dv-web &&
+#cp -r dir-to-http-serve/. ../dv-http-serve/dir-to-http-serve/dv-web &&
 
 true;
 
