@@ -1,0 +1,159 @@
+{
+    "name": "view-crime",
+    "title": "CRIME_IN_CHICAGO",
+    "datacubeKey": "crime",
+    "backendUrl": "http://10.248.76.16:28999",
+    "geoMapConstraintColor": "#40E0D0",
+    "geoMapConstraintEnabledInCharts": true,
+    "geoShapeColors": ["#E41A1C", "#377EB8", "#4DAF4A", "#984EA3", "#FFFF33", "#A65628", "#F781BF", "#999999"],
+    "geoShapeSumColor": "#7FFF00",
+    "geoShapeSumEnabledInCharts": false,
+    "controlPanelVisibility": false,
+    "categoryChartStates": [
+        {
+            "name": "category-chart-crime",
+            "title": "crime",
+            "type": "grouped-bar-chart-horizontal",
+            "categoryFieldName": "crime",
+            "categories": [
+                "ARSON",
+                "ASSAULT",
+                "BATTERY",
+                "BURGLARY",
+                "CONCEALED_CARRY_LICENSE_VIOLATION",
+                "CRIMINAL_DAMAGE",
+                "CRIMINAL_TRESPASS",
+                "CRIM_SEXUAL_ASSAULT",
+                "DECEPTIVE_PRACTICE",
+                "GAMBLING",
+                "HOMICIDE",
+                "INTERFERENCE_WITH_PUBLIC_OFFICER",
+                "INTIMIDATION",
+                "KIDNAPPING",
+                "LIQUOR_LAW_VIOLATION",
+                "MOTOR_VEHICLE_THEFT",
+                "NARCOTICS",
+                "NON-CRIMINAL",
+                "NON-CRIMINAL_(SUBJECT_SPECIFIED)",
+                "OBSCENITY",
+                "OFFENSE_INVOLVING_CHILDREN",
+                "OTHER_NARCOTIC_VIOLATION",
+                "OTHER_OFFENSE",
+                "PROSTITUTION",
+                "PUBLIC_INDECENCY",
+                "PUBLIC_PEACE_VIOLATION",
+                "ROBBERY",
+                "SEX_OFFENSE",
+                "STALKING",
+                "THEFT",
+                "WEAPONS_VIOLATION"
+            ],
+            "selection": [
+                "ARSON",
+                "ASSAULT",
+                "BATTERY",
+                "BURGLARY",
+                "CONCEALED_CARRY_LICENSE_VIOLATION",
+                "CRIMINAL_DAMAGE",
+                "CRIMINAL_TRESPASS",
+                "CRIM_SEXUAL_ASSAULT",
+                "DECEPTIVE_PRACTICE",
+                "GAMBLING",
+                "HOMICIDE",
+                "INTERFERENCE_WITH_PUBLIC_OFFICER",
+                "INTIMIDATION",
+                "KIDNAPPING",
+                "LIQUOR_LAW_VIOLATION",
+                "MOTOR_VEHICLE_THEFT",
+                "NARCOTICS",
+                "NON-CRIMINAL",
+                "NON-CRIMINAL_(SUBJECT_SPECIFIED)",
+                "OBSCENITY",
+                "OFFENSE_INVOLVING_CHILDREN",
+                "OTHER_NARCOTIC_VIOLATION",
+                "OTHER_OFFENSE",
+                "PROSTITUTION",
+                "PUBLIC_INDECENCY",
+                "PUBLIC_PEACE_VIOLATION",
+                "ROBBERY",
+                "SEX_OFFENSE",
+                "STALKING",
+                "THEFT",
+                "WEAPONS_VIOLATION"
+            ],
+            "valueFieldName": "count",
+            "alphaOrder": true,
+            "logScale": false,
+            "percentage": false,
+            "visibility": true
+        }
+    ],
+    "timeGraphStates": [
+        {
+            "name": "time-graph-time",
+            "title": "time",
+            "type": "time-graph-with-context",
+            "timeFieldName": "time",
+            "rangeSelection": [
+                "2013-12-06T18:00:00.000Z",
+                "2014-02-27T05:00:00.000Z"
+            ],
+            "brushSelection": [],
+            "valueFieldName": "count",
+            "bucketToBin": 1,
+            "logScale": false,
+            "visibility": true,
+            "offsetIsoDate": "2013-12-01T00:00:00Z",
+            "binToMin": 60
+        }
+    ],
+    "geoMapStates": [
+        {
+            "name": "geo-map-1",
+            "title": "Map",
+            "spaceFieldName": "location",
+            "bounds": [
+                {"lat": 41, "lng": -88},
+                {"lat": 42, "lng": -87}
+            ],
+            "maxZoom": 17,
+            "tiles": [],
+            "geoTileLayerStates": [
+                {
+                    "name": "geo-map-1-tile-layer-1",
+                    "title": "OpenStreetMap",
+                    "url": "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+                    "opacity": 0.4,
+                    "visibility": true
+                }
+            ],
+            "geoGridLayerStates": [
+                {
+                    "name": "geo-map-1-grid-layer-1",
+                    "title": "Grid Layer",
+                    "spaceFieldName": "location",
+                    "valueFieldName": "count",
+                    "visibility": false
+                }
+            ],
+            "geoHeatLayerStates": [
+                {
+                    "name": "geo-map-1-heat-layer-1",
+                    "title": "Heat Layer",
+                    "spaceFieldName": "location",
+                    "valueFieldName": "count",
+                    "minDrill": 0,
+                    "maxDrill": 8,
+                    "drill": 8,
+                    "logScale": true,
+                    "colors": ["#00FF00", "#17FF00", "#2EFF00", "#45FF00", "#5CFF00", "#73FF00", "#8BFF00", "#A2FF00", "#B9FF00",
+                        "#D0FF00", "#E7FF00", "#FFFF00", "#FEE700", "#FED000", "#FDB900", "#FDA200", "#FC8B00", "#FC7300",
+                        "#FB5C00", "#FB4500", "#FA2E00", "#FA1700", "#FA0000"],
+                    "aRange": [55, 255],
+                    "overallOpacity": 0.6,
+                    "visibility": true
+                }
+            ]
+        }
+    ]
+}

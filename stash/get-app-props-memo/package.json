@@ -1,0 +1,11 @@
+{
+	"name": "get-app-props-memo",
+	"version": "1.0.0",
+	"private": true,
+    "dependencies": {
+        "create-app-props": "file:../create-app-props",
+        "promise": "7.1.1",
+        "underscore": "1.8.3"
+    },
+	"author": "TTLabs"
+}

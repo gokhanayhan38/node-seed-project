@@ -1,8 +1,0 @@
-{
-  "name": "action-dispatcher",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "flux": "2.1.1"
-  }
-}

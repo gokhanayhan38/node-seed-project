@@ -1,0 +1,4 @@
+
+
+directorylere package json koyma ama relative path vermelsin boyle yaparsan.
+bu sekilde hmr yi kullanabilirsin. kod degiştirdinmi calısır.

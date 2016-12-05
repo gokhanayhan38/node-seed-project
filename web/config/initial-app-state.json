@@ -1,0 +1,20 @@
+{
+    "logoContainerWidth": 123,
+
+    "categoryChartDivWidth": 360,
+    "categoryChartSvgMargin": {"left": 150, "right": 10, "top": 20, "bottom": 30},
+
+    "timeGraphDivHeight": 125,
+    "timeGraphSvgMargin": {"left": 50, "right": 10, "top": 30, "bottom": 30},
+
+    "timeGraphContextDivHeight": 50,
+    "timeGraphContextSvgMargin": {"left": 50, "right": 10, "top": 0, "bottom": 30},
+
+    "viewStates": [
+        "crime",
+        "demo",
+        "nw-infra-turkey",
+        "speedtest",
+        "customer-cases"
+    ]
+}
