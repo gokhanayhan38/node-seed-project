@@ -12,6 +12,10 @@ module.exports = {
         publicPath: "http://localhost:8081/"
     },
 
+    resolve: {
+        extensions: ["", ".webpack.js", ".ts", ".tsx", ".js"]
+    },
+
     externals: {
         "bootstrap-tour": "Tour",
         "d3": "d3",
@@ -40,6 +44,10 @@ module.exports = {
                 query: {
                     presets: ["react"]
                 }
+            },
+            {
+                test: /\.tsx?$/,
+                loader: "awesome-typescript-loader"
             }
         ]
     },
