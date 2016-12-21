@@ -6,7 +6,9 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": false,
-    "jsx": "react"
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "classic"
   },
   "include": [
     "./**/*"
@@ -15,6 +17,7 @@
     "node_modules"
   ],
   "files": [
-    "./typings/react/react.d.ts"
+    "./typings/react/react.d.ts",
+    "./**/*"
   ]
 }

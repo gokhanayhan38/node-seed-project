@@ -1,6 +1,16 @@
+
+// const ActionNames = require("../../action-names");
 import ActionNames from "../../action-names";
+
 class SwitchViaViewNameRequested {
-    constructor(toViewName) {
+    /*:: name: string
+         toViewName: string
+     */
+
+    //constructor(options) {
+    //    super(options);
+    //}
+    constructor(toViewName: string) {
         if (toViewName.length == 0) {
             const err = new Error("error in SwitchViaViewNameRequested constructor - empty arguments");
             console.error(err.message);
@@ -12,4 +22,8 @@ class SwitchViaViewNameRequested {
         }
     }
 }
-export { SwitchViaViewNameRequested };
+
+// module.exports = SwitchViaViewNameRequested;
+export {
+    SwitchViaViewNameRequested
+};

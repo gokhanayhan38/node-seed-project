@@ -1,0 +1,18 @@
+externals: {
+"bootstrap-tour": "Tour",
+"d3": "d3",
+"immutable": "Immutable",
+"leaflet": "L",
+"leaflet-draw": "L.Control.Draw",
+"leaflet.markercluster": "L.MarkerClusterGroup",
+"leaflet-measure": "L.Control.Measure",
+"less": "less",
+"jquery": "$",
+"jquery-mobile": "$.mobile",
+"node-fetch": "fetch",
+"promise": "Promise",
+"react": "React",
+"react-dom": "ReactDOM",
+"react-leaflet": "ReactLeaflet",
+"underscore": "_"
+},
