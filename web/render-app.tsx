@@ -38,7 +38,10 @@ function renderApp(appProps /*: Object */, appContext /*: Object */) {
 
 }
 
-module.exports = renderApp;
+// module.exports = renderApp;
+export {
+    renderApp
+};
 
 //<Route path="/inbox" component={Inbox}/>
 //<Route path="/compose" component={Compose}/>

@@ -1,15 +1,8 @@
-"use strict";
-
-const ActionNames = require("../../action-names");
-
+import ActionNames from "../../action-names";
 class SwitchViaAppStateRequested {
-    /*:: name:string
-         toAppState: AppState
-     */
-    constructor(options /*: {toAppState: AppState} */) {
+    constructor(options) {
         if (Object.keys(options.toAppState).length == 0) {
             const err = new Error("error in SwitchViaAppStateRequested constructor - empty arguments");
-
             console.error(err.message);
             throw err;
         }
@@ -19,5 +12,4 @@ class SwitchViaAppStateRequested {
         }
     }
 }
-
-module.exports = SwitchViaAppStateRequested;
+export { SwitchViaAppStateRequested };

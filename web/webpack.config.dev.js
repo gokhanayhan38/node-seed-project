@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const {DedupePlugin} = require("webpack").optimize;
 
 module.exports = {
-    entry: ["./main.js"],
+    entry: ["./main.tsx"],
 
     output: {
         path: path.join(__dirname, "dir-to-http-serve"),
@@ -12,23 +12,8 @@ module.exports = {
         publicPath: "http://localhost:8081/"
     },
 
-    externals: {
-        "bootstrap-tour": "Tour",
-        "d3": "d3",
-        "immutable": "Immutable",
-        "leaflet": "L",
-        "leaflet-draw": "L.Control.Draw",
-        "leaflet.markercluster": "L.MarkerClusterGroup",
-        "leaflet-measure": "L.Control.Measure",
-        "less": "less",
-        "jquery": "$",
-        "jquery-mobile": "$.mobile",
-        "node-fetch": "fetch",
-        "promise": "Promise",
-        "react": "React",
-        "react-dom": "ReactDOM",
-        "react-leaflet": "ReactLeaflet",
-        "underscore": "_"
+    resolve: {
+        extensions: ["", ".webpack.js", ".ts", ".tsx", ".js"]
     },
 
     module: {
@@ -40,7 +25,15 @@ module.exports = {
                 query: {
                     presets: ["react"]
                 }
+            },
+            {
+                test: /\.tsx?$/,
+                loader: "awesome-typescript-loader"
             }
+        ],
+        preLoaders: [
+            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+            { test: /\.js$/, loader: "source-map-loader" }
         ]
     },
 
