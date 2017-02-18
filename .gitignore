@@ -1,7 +1,5 @@
 .idea
-/packages/ws/dir-to-http-serve
-/packages/ws/node_modules
 /packages/web-main/node_modules
 /packages/web-main/node_modules/
-/packages/ws/node_modules/
 
+node_modules/
