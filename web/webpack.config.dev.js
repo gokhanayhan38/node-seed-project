@@ -61,7 +61,14 @@ module.exports = {
 
         new DedupePlugin()
     ],
-
+    resolve: {
+      root: path.join(__dirname, "dir-to-http-serve"),
+      modulesDirectories: [
+       'node_modules',
+       './components',
+       './components/Header'
+      ]
+    },
     devServer: {
         contentBase: "./dir-to-http-serve",
         inline: true,

@@ -3,7 +3,9 @@
 const React = require("react"),
     {Component, PropTypes} = React;
 //const {Router, Route, Link, IndexRoute, hashHistory, browseHistory} = require("react-router");
-const Header = require("./Header/header.jsx");
+// const Header = require("./Header/header.jsx");
+//webpack de modulesDirectories de ekledim bu zikkimin yerini bu şekilde de kullanilabiliyor
+const Header = require("header.jsx");
 const MyMenuBar = require("./Menu/myMenuBar.jsx");
 const Home = require("./Content/home.jsx");
 //const Sidebar = require("./sidebar.jsx");

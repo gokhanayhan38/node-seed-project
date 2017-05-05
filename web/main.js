@@ -17,7 +17,7 @@ const {Dispatcher} = require("flux");
 const CacheHolder = require("@yavuzmester/cacheholder");
 const fetch = require("node-fetch");
 
-class WebMain {
+class Web {
     constructor() {
         this.appProps = undefined;
         //Dispatcher
@@ -71,4 +71,4 @@ class WebMain {
     }
 }
 
-new WebMain();
+new Web();
